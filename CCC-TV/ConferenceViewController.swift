@@ -9,9 +9,10 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
     override func viewDidLoad() {
+        let conferences: ConferenceCollection
         super.viewDidLoad()
+        conferences = Api.getConferences()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
